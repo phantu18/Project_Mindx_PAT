@@ -1,0 +1,73 @@
+.about_stpp {
+  position: relative;
+  padding: 120px 0 70px;
+}
+
+.about_stpp .sec-title {
+  margin-bottom: 45px;
+}
+
+.about_stpp .content-column {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.about_stpp .content-column .inner-column {
+  position: relative;
+  padding-left: 30px;
+}
+
+.about_stpp .text {
+  margin-bottom: 40px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #848484;
+  font-weight: 400;
+}
+
+.about_stpp .list-style-one {
+  margin-bottom: 45px;
+}
+
+.about_stpp .btn-box {
+  position: relative;
+}
+
+.about_stpp .btn-box a {
+  padding: 15px 50px;
+}
+
+.about_stpp .image-column {
+  position: relative;
+}
+
+.about_stpp .image-column .inner-column {
+  position: relative;
+  padding-left: 120px;
+  padding-bottom: 125px;
+}
+
+.about_stpp .image-column .inner-column:before {
+  position: absolute;
+  left: -75px;
+  top: 65px;
+  height: 520px;
+  width: 520px;
+  background-image: url(https://i.ibb.co/fxJ1jtC/about-circle-1.png);
+  content: "";
+}
+
+.about_stpp .image-column .image-1 {
+  position: relative;
+}
+
+.about_stpp .image-column .image-2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.about_stpp .image-column .image-2 img,
+.about_stpp .image-column .image-1 img {
+  box-shadow: 0 30px 50px rgba(8, 13, 62, 0.15);
+}
