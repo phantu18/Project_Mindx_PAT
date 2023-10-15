@@ -170,7 +170,7 @@ p.title__sub::before {
   font-size: 20px;
   position: relative;
 }
-@keyframes showtop {
+/* @keyframes showtop {
   from {
     opacity: 0;
     transform: translate(0, 50px);
@@ -201,7 +201,7 @@ p.title__sub::before {
 }
 .delay-6 {
   animation-delay: 2s !important;
-}
+} */
 .btn-style-one {
   position: relative;
   display: inline-block;
@@ -247,7 +247,8 @@ p.title__sub::before {
 #welcome_shop h2::before,
 #new_shop h2::before,
 #sale_shop h2::before,
-#blog_shop h2::before {
+#blog_shop h2::before,
+#ig_shop h2::before {
   content: "";
   position: absolute;
   height: 3px;
