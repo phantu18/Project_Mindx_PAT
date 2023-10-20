@@ -307,9 +307,6 @@ p.title__sub::before {
 }
 ul.products_trending {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-top: 50px;
 }
 
 ul.products_trending li {
@@ -325,14 +322,6 @@ ul.products_trending li {
   opacity: 0.7;
   font-size: 20px;
 } */
-
-#about_us {
-  width: 100%;
-  z-index: 1;
-  padding: 50px 100px;
-  height: auto;
-  display: block;
-}
 #footer_sale {
   width: 100%;
   z-index: 1;

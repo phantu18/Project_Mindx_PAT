@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Dancing+Script:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-* > index.css {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
   scroll-behavior: smooth;
   list-style: none;
+}
+a {
+  text-decoration: none;
 }
 /* N   A   V   I   G   A   T   I   O   N */
 h1,
@@ -94,7 +97,19 @@ nav div ul li:hover {
   height: auto;
   width: auto;
 }
+/* B   O   D   Y */
+body {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+section {
+  width: 90vw;
+}
 /* B   A   N   N   E   R   1 */
+#banner1 {
+  width: 100vw;
+}
 /* P   A   G   E   1 */
 #page1 {
   height: 80vh;
@@ -117,7 +132,8 @@ nav div ul li:hover {
 #page1 div h1 {
   text-align: center;
   width: 150%;
-  font-size: 400%;
+  font-size: 400%;  font-family: "Playfair Display", serif;
+
 }
 #page1 div p {
   font-size: 150%;
@@ -154,7 +170,9 @@ nav div ul li:hover {
   flex-direction: column;
   justify-content: space-evenly;
   color: white;
-  margin-left: 10%;
+  margin-left: 8%;
+  padding-left: 2%;
+  backdrop-filter: blur(7px);
 }
 #page2 div h1 {
   font-size: 500%;
@@ -181,6 +199,7 @@ nav div ul li:hover {
   justify-content: center;
   gap: 5%;
   height: 18vh;
+  width: 100vw;
   background-color: #756d6d;
   color: white;
   font-size: x-small;
@@ -275,6 +294,15 @@ nav div ul li:hover {
 #banner4 {
   margin-top: 3%;
 }
+#top_banner4 {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  height: 22vh;
+}
+#logo_collection {
+  align-self: center;
+}
 #logo_collection h1 {
   text-align: center;
   font-style: italic;
@@ -282,13 +310,25 @@ nav div ul li:hover {
   font-size: 100px;
   line-height: 60%;
   margin-right: 25%;
+  align-self: center;
 }
-#top_banner4 {
-  display: flex;
-  justify-content: space-between;
+
+.left {
+  position: relative;
+  transform: translatex(-300px);
+  opacity: 0;
+  transition: 1s all ease;
 }
-#top_banner4 button {
+.right {
   align-self: flex-end;
+  position: relative;
+  transform: translatex(300px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.slideIn.active {
+  transform: translatex(0);
+  opacity: 1;
 }
 .product_top p {
   font-size: 15px;
@@ -313,12 +353,86 @@ nav div ul li:hover {
 }
 ul.products_trending {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-top: 50px;
+  margin-top: 3%;
 }
 ul.products_trending li {
   flex-basis: 25%;
-  padding-left: 10px;
   list-style: none;
+}
+/* B   A   N   N   E   R   5 */
+#banner5 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+}
+#banner5 main {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  flex-flow: column;
+  width: 45%;
+}
+#banner5 p {
+  font-size: 18px;
+}
+#banner5 h1 {
+  font-size: 37px;
+  padding-bottom: 5px;
+  font-weight: 800;
+  letter-spacing: 1.5;
+  font-family: Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+#banner5 a {
+  background-color: red;
+  color: white;
+  width: 30%;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 2.5% 0;
+  border-radius: 25px;
+  transition: 0.5s ease;
+}
+#banner5 a:hover {
+  background-color: black;
+}
+/* B   A   N   N   E   R   6 */
+#footer_sale {
+  width: 100%;
+  z-index: 1;
+  padding: 10px 100px;
+  height: auto;
+  display: block;
+}
+.img__left__sale {
+  background-image: url(/Image/pexels-yelena-odintsova-14579191.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 70%;
+}
+#sale_shop {
+  height: 100vh;
+}
+
+.ig__shop {
+  max-width: 1224px;
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+}
+.photo-gallery {
+  display: flex;
+  gap: 20px;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
 }
