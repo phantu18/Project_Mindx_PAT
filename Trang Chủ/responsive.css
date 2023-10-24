@@ -46,9 +46,16 @@
   }
   #product_banner4 {
     width: 47%;
+    font-size: smaller;
   }
   /* B   A   N   N   E   R   5 */
-  #banner5 div {
-    width: 390px;
+  #banner5 {
+    height: 500px;
+  }
+  #img_banner5 {
+    display: none;
+  }
+  #banner5 main {
+    width: 100%;
   }
 }

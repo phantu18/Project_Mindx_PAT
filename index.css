@@ -365,26 +365,26 @@ section {
   transform: translatex(0);
   opacity: 1;
 }
-#list_banner4 {
+.list_banner {
   display: flex;
   width: 100%;
   justify-content: space-between;
 }
-#product_banner4 {
+.product_banner {
   width: 24%;
   transition: 0.3s ease-in-out;
   border-radius: 10px;
   margin-top: 3%;
 }
-#product_banner4:hover {
+.product_banner:hover {
   transform: scale(1.05);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-#product_banner4 img {
+.product_banner img {
   width: 100%;
   border-radius: 10px;
 }
-#product_banner4 p,
+.product_banner p,
 span {
   padding-left: 2%;
 }
@@ -427,41 +427,17 @@ span {
   background-color: black;
 }
 /* B   A   N   N   E   R   6 */
-#footer_sale {
-  width: 100%;
-  z-index: 1;
-  padding: 10px 100px;
-  height: auto;
-  display: block;
-}
-.img__left__sale {
-  background-image: url(/Image/pexels-yelena-odintsova-14579191.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 70%;
-}
-#sale_shop {
-  height: 100vh;
-}
 
-.ig__shop {
-  max-width: 1224px;
-  width: 90%;
-  margin: auto;
-  padding: 40px 0;
-}
-.photo-gallery {
+/* B   A   N   N   E   R   8 */
+.price_banner8 {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 2%;
 }
-.column {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.price_banner8 p{
+  text-decoration: line-through;
 }
-.photo img {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  object-fit: cover;
+.price_banner8 img{
+  width: 3vw;
 }
