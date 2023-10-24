@@ -234,8 +234,7 @@ p.title__sub::before {
   height: auto;
   display: block;
 }
-#welcome_shop h1,
-#about_us h1 {
+#welcome_shop h1 {
   font-size: 37px;
   padding-bottom: 5px;
   padding: 40px 0;
