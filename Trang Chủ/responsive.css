@@ -41,10 +41,10 @@
   #logo_collection h1 {
     font-size: 500%;
   }
-  #list_banner4 {
+  .list_banner {
     flex-wrap: wrap;
   }
-  #product_banner4 {
+  .product_banner {
     width: 47%;
     font-size: smaller;
   }
