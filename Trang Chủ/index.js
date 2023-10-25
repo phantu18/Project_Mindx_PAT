@@ -20,13 +20,6 @@
 //   let las;
 // }
 
-// Work in progress
-const search = document.getElementById('search_icon');
-search.addEventListener('focus', search_popup);
-function search_popup() {
-  
-}
-
 // B   A   N   N   E   R   4   ---   S   L   I   D   E
 function slide_in() {
   var reveals = document.getElementsByClassName('slideIn');
