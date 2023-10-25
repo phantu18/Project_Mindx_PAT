@@ -1,4 +1,4 @@
-@media (min-width: 300px) {
+@media (max-width: 480px){
   /* N   A   V   I   G   A   T   I   O   N */
   #nav_desktop,
   #search,
@@ -27,10 +27,9 @@
     width: 20px !important;
   }
   /* B   A   N   N   E   R   3 */
-  #banner3 {
-height: 100vh;  }
   #top_banner3,
   #bottom_banner3 {
+    height: 52vh;
     flex-wrap: wrap;
     margin: 0;
   }
@@ -52,7 +51,7 @@ height: 100vh;  }
   }
   .category:hover h2 {
     margin-top: 0vh;
-    padding-top: 0vh;
+    padding-top: 5vh;
   }
   .category:hover .sub_content {
     margin-top: 0vh;
@@ -88,7 +87,16 @@ height: 100vh;  }
   #banner5 main {
     width: 100%;
   }
-  /* B   A   N   N   E   R   8 */
+  #banner5 main h1 {
+    font-size: 27px;
+  }
+  #banner5 main p {
+    font-size: 16px;
+  }
+  #banner5 main a {
+    align-self: center;
+    width: 60%;
+  } /* B   A   N   N   E   R   8 */
   .price_banner8 b {
     font-size: 15px;
   }
@@ -99,6 +107,7 @@ height: 100vh;  }
     width: 8vw;
   }
 }
+
 @media (max-width: 860px) {
   #nav_desktop,
   #search,
