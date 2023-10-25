@@ -290,16 +290,12 @@ section {
   text-align: center;
   font-size: 150%;
 }
-#banner3 main {
-  width: 90%;
-  height: 119vh;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
 #top_banner3, #bottom_banner3 {
-
+display: flex;
+width: 80%;
+justify-content: space-between;
 }
+#bottom_banner3 {margin-top: 1%;}
 #tshirt,
 #trendy {
   width: 60%;
@@ -311,7 +307,6 @@ section {
 .category {
   overflow: hidden;
   position: relative;
-  margin-top: 2%;
   height: 55vh;
 }
 .category h2 {
@@ -421,6 +416,10 @@ span {
   display: flex;
   justify-content: space-between;
   margin-top: 3%;
+  position: relative;
+}
+#img_banner5 img {
+  height: 80vh;
 }
 #banner5 main {
   display: flex;

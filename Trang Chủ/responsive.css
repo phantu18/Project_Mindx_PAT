@@ -1,4 +1,4 @@
-@media (max-width: 480px) {
+@media (min-width: 300px) {
   /* N   A   V   I   G   A   T   I   O   N */
   #nav_desktop,
   #search,
@@ -21,18 +21,23 @@
     height: 10vh;
   }
   #banner2 h1 {
-    font-size: 100%;
+    font-size: 10px !important;
   }
   #banner2 img {
-    width: 30px;
+    width: 20px !important;
   }
   /* B   A   N   N   E   R   3 */
-  #banner3 main {
-    flex-flow: column;
-    align-items: center;
+  #banner3 {
+height: 100vh;  }
+  #top_banner3,
+  #bottom_banner3 {
+    flex-wrap: wrap;
+    margin: 0;
   }
   .category {
     width: 100% !important;
+    height: 25vh !important;
+    margin-top: 2%;
   }
   .category h2 {
     margin-top: 10vh;
@@ -43,10 +48,11 @@
   }
   .sub_content p {
     padding-top: 15vh;
+    font-size: 20px;
   }
   .category:hover h2 {
     margin-top: 0vh;
-    padding-top: 5vh;
+    padding-top: 0vh;
   }
   .category:hover .sub_content {
     margin-top: 0vh;
@@ -115,12 +121,13 @@
   #banner2 img {
     width: 30px;
   }
-  /* 3 */
-  #banner3 main {
-    height: 40vh;
+  /* B   A    N   N    E    R   3 */
+  #top_banner3,
+  #bottom_banner3 {
+    height: 0vh;
   }
   .category {
-    height: 20%;
+    height: 100%;
   }
   .category h2 {
     margin-top: 10vh;
