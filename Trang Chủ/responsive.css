@@ -8,4 +8,135 @@
   #nav_phone {
     display: block;
   }
+
+  /* B   A   N   N   E   R   1 */
+  #page1,
+  #page2 {
+    width: 390px;
+    height: 100%;
+    font-size: smaller;
+  }
+  /* B   A   N   N   E   R   2 */
+  #banner2 {
+    height: 10vh;
+  }
+  #banner2 h1 {
+    font-size: 100%;
+  }
+  #banner2 img {
+    width: 30px;
+  }
+  /* B   A   N   N   E   R   3 */
+  #banner3 main {
+    flex-flow: column;
+    align-items: center;
+  }
+  .category {
+    width: 100% !important;
+  }
+  .category h2 {
+    margin-top: 10vh;
+    font-size: 30px;
+  }
+  .sub_content {
+    margin-top: 30vh;
+  }
+  .sub_content p {
+    padding-top: 15vh;
+  }
+  .category:hover h2 {
+    margin-top: 0vh;
+    padding-top: 5vh;
+  }
+  .category:hover .sub_content {
+    margin-top: 0vh;
+  }
+  /* B   A   N   N   E   R   4 */
+  #top_banner4 {
+    flex-flow: column;
+  }
+  #l_banner4 {
+    display: none;
+  }
+  #logo_collection h1 {
+    font-size: 500%;
+  }
+  .list_banner {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .product_banner {
+    width: 47%;
+    font-size: smaller;
+  }
+  .product_banner b {
+    font-size: 15px;
+  }
+  /* B   A   N   N   E   R   5 */
+  #banner5 {
+    height: 500px;
+  }
+  #img_banner5 {
+    display: none;
+  }
+  #banner5 main {
+    width: 100%;
+  }
+  /* B   A   N   N   E   R   8 */
+  .price_banner8 b {
+    font-size: 15px;
+  }
+  .price_banner8 p {
+    font-size: 10px;
+  }
+  .price_banner8 img {
+    width: 8vw;
+  }
+}
+@media (max-width: 860px) {
+  #nav_desktop,
+  #search,
+  #cart {
+    display: none;
+  }
+  #nav_phone {
+    display: block;
+  }
+  .container-fluid {
+    justify-content: space-around !important;
+  }
+  /* B   A   N   N   E   R   2 */
+  #banner2 {
+    height: 10vh;
+  }
+  #banner2 h1 {
+    font-size: 250%;
+  }
+  #banner2 img {
+    width: 30px;
+  }
+  /* 3 */
+  #banner3 main {
+    height: 40vh;
+  }
+  .category {
+    height: 20%;
+  }
+  .category h2 {
+    margin-top: 10vh;
+    font-size: 30px;
+  }
+  .sub_content {
+    margin-top: 30vh;
+  }
+  .sub_content p {
+    padding-top: 15vh;
+  }
+  .category:hover h2 {
+    margin-top: 0vh;
+    padding-top: 5vh;
+  }
+  .category:hover .sub_content {
+    margin-top: 0vh;
+  }
 }
